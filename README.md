@@ -1,3 +1,3 @@
-* Blog created as part of Udacity CS253
+# Blog created as part of Udacity CS253
 
 Let's see what's next...
