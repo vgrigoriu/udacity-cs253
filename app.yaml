@@ -12,9 +12,14 @@ handlers:
 - url: /unit2/rot13
   script: rot13.app
 
+- url: /unit2/signup
+  script: signup.app
+
 - url: /.*
   script: main.app
 
 libraries:
 - name: webapp2
   version: "2.5.1"
+- name: jinja2
+  version: "2.6"
