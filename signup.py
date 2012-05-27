@@ -8,7 +8,8 @@ jinja_environment = jinja2.Environment(
 
 class SignupHandler(webapp2.RequestHandler):
 	def get(self):
-		self.response.out.write("cucu bau")
+		template = jinja_environment.get_template('signup.html')
+		self.response.write(template.render())
 
 app = webapp2.WSGIApplication([('/unit2/signup', SignupHandler)],
                               debug=True)
