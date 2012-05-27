@@ -1,12 +1,15 @@
 <h1>Signup</h1>
 <form method="post">
-	<label>Username: <input name="username" /></label>
-	<br />
-	<label>Password: <input name="password" type="password" /></label>
-	<br />
-	<label>Verify: <input name="verify" type="password" /></label>
-	<br />
-	<label>Email (optional): <input name="email" /></label>
-	<br />
-	<input type="submit" />
+    <label>Username: <input name="username" value="{{ username }}" /></label>
+    <span style="color: red">{{ username_error}}</span>
+    <br />
+    <label>Password: <input name="password" type="password" /></label>
+    <span style="color: red">{{ password_error}}</span>
+    <br />
+    <label>Verify: <input name="verify" type="password" /></label>
+    <br />
+    <label>Email (optional): <input name="email" value="{{ email }}" /></label>
+    <span style="color: red">{{ email_error}}</span>
+    <br />
+    <input type="submit" />
 </form>
