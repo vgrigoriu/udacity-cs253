@@ -9,7 +9,7 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /rot13
+- url: /unit2/rot13
   script: rot13.app
 
 - url: /.*
